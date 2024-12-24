@@ -15,8 +15,8 @@
 #include <netdb.h>
 #include <netinet/in.h>
 #include <netinet/udp.h>
-#include <spdlog/common.h>
-#include <spdlog/details/os.h>
+#include "../common.h"
+#include "os.h"
 #include <sys/socket.h>
 #include <unistd.h>
 

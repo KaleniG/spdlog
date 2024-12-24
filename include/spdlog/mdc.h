@@ -10,7 +10,7 @@
 #include <map>
 #include <string>
 
-#include <spdlog/common.h>
+#include "common.h"
 
 // MDC is a simple map of key->string values stored in thread local storage whose content will be printed by the loggers.
 // Note: Not supported in async mode (thread local storage - so the async thread pool have different copy).

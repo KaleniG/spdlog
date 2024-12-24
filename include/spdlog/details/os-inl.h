@@ -4,10 +4,10 @@
 #pragma once
 
 #ifndef SPDLOG_HEADER_ONLY
-    #include <spdlog/details/os.h>
+    #include "os.h"
 #endif
 
-#include <spdlog/common.h>
+#include "../common.h"
 
 #include <algorithm>
 #include <array>
@@ -22,7 +22,7 @@
 #include <thread>
 
 #ifdef _WIN32
-    #include <spdlog/details/windows_include.h>
+    #include "windows_include.h"
     #include <fileapi.h>  // for FlushFileBuffers
     #include <io.h>       // for _get_osfhandle, _isatty, _fileno
     #include <process.h>  // for _get_pid

@@ -7,7 +7,7 @@
 //
 // include bundled or external copy of fmtlib's ostream support
 //
-#include <spdlog/tweakme.h>
+#include "../tweakme.h"
 
 #if !defined(SPDLOG_USE_STD_FORMAT)
     #if !defined(SPDLOG_FMT_EXTERNAL)
@@ -16,7 +16,7 @@
                 #define FMT_HEADER_ONLY
             #endif
         #endif
-        #include <spdlog/fmt/bundled/ostream.h>
+        #include "../bundled/ostream.h"
     #else
         #include <fmt/ostream.h>
     #endif

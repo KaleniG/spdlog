@@ -8,7 +8,7 @@
 // include bundled or external copy of fmtlib's std support (for formatting e.g.
 // std::filesystem::path, std::thread::id, std::monostate, std::variant, ...)
 //
-#include <spdlog/tweakme.h>
+#include "../tweakme.h"
 
 #if !defined(SPDLOG_USE_STD_FORMAT)
     #if !defined(SPDLOG_FMT_EXTERNAL)
@@ -17,7 +17,7 @@
                 #define FMT_HEADER_ONLY
             #endif
         #endif
-        #include <spdlog/fmt/bundled/std.h>
+        #include "bundled/std.h"
     #else
         #include <fmt/std.h>
     #endif

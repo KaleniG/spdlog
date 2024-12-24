@@ -4,19 +4,19 @@
 #pragma once
 
 #ifndef SPDLOG_HEADER_ONLY
-    #include <spdlog/pattern_formatter.h>
+    #include "pattern_formatter.h"
 #endif
 
-#include <spdlog/details/fmt_helper.h>
-#include <spdlog/details/log_msg.h>
-#include <spdlog/details/os.h>
+#include "details/fmt_helper.h"
+#include "details/log_msg.h"
+#include "details/os.h"
 
 #ifndef SPDLOG_NO_TLS
-    #include <spdlog/mdc.h>
+    #include "mdc.h"
 #endif
 
-#include <spdlog/fmt/fmt.h>
-#include <spdlog/formatter.h>
+#include "fmt/fmt.h"
+#include "formatter.h"
 
 #include <algorithm>
 #include <array>
